@@ -2,18 +2,18 @@
 
 let string = "Larionov Bogdan";
 console.log(string.length); //  считает длину строки - 16
-console.log(string[2]);// индекс моссива
+console.log(string[2]);// индекс моссива - 'r'
 // -------------
 let array = [1,2,3,4,5, 'hello']; // 0,1,2,3,4,5 индекс моссива
 console.log(array.length);  // длина массива - 6
-console.log(array[2]); // 3 индекс моссива
+console.log(array[2]); // 3 индекс моссива - '3'
 
 // -------------
 
 //  Если строка, мы не знаем сколько в ней символов. Вывести в консоль последний символ.
 let long_string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum animi nesciunt voluptas architecto temporibus itaque, debitis reiciendis tempore voluptatum sed quos cum natus veritatis doloribus cupiditate molestias ullam aspernatur dolores.';
-let index = long_string.length-1;//индекс последнего элемента в строке
-console.log(long_string[index]);
+let index = long_string.length-1; //индекс последнего элемента в строке - '.'
+console.log(long_string[index]); 
 
 
 let long_string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum animi nesciunt voluptas architecto temporibus itaque, debitis reiciendis tempore voluptatum sed quos cum natus veritatis doloribus cupiditate molestias ullam aspernatur dolores.';
