@@ -190,6 +190,7 @@ const getMax = (num1, num2, num3, num4, num5) => {
     return num5;
   }
 };
+
 console.log(getMax(8, 10, 19, 18, 50)); // 50 - 5
 console.log(getMax(80, 10, 19, 18, 50)); // 80 - 1
 console.log(getMax(8, 10, 190, 18, 50)); // 190 - 3
