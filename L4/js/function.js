@@ -102,14 +102,80 @@ function getPerson(firstname = "Bogdan", age = 32) {
 console.log(getPerson());
 console.log(getPerson("Alona", 33));
 console.log(getPerson("Xenia", 8));
+console.log(getPerson(undefined, 80)); // undefined подставит по умолчанию имя задонное в firstname = "Bogdan"
+// ---------
+/* Напишите функцию, которая принимается в себя 2 аргумента и 
+возврощает результат деления большого числа на меньшее. */
+// 1.
+function dividedNums(num1, num2) {
+  if (num1 > num2) {
+    return num1 / num2;
+  } else {
+    return num2 / num1;
+  }
+}
+console.log(dividedNums(1, 4)); // 4
+console.log(dividedNums(4, 2)); // 2
+
+// 2.
+
+function dividedNums(num1, num2) {
+  return Math.max(num1, num2) / Math.min(num1, num2);
+}
+console.log(dividedNums(1, 4)); // 4
+console.log(dividedNums(4, 2)); // 2
+
+// ФУНКЦИИ (Function declaration)
+
+function greeting_declaration(name, lastname) {
+  return `Hello, ${name} ${lastname}!`;
+}
+console.log(greeting_declaration("Bogdan", "Larionov"));
 
 // ---------
-
 //NaN - not a number
 // 5 + undefined = NaN
 // 5 + '5' = 55
 // 5 + true = NaN
+// ---------
 
 //ФУНКЦИОНАЛЬНЫЕ ВЫРАЖЕНИЯ
 
+let greeting = function getHello(name, lastname) {
+  return `Hello ${name} ${lastname}!`;
+};
+console.log(greeting("allona", "b"));
+
 //СТРЕЛОЧНЫЕ ФУНКЦИИ (Arrow functions)
+
+let greeting_arrow = () => {
+  return;
+};
+// ---------
+
+let greeting_arrow = (name, lastname) => {
+  return `Hello, ${name} ${lastname}!`;
+};
+
+console.log(greeting_arrow("Ivan", "Dron")); // Hello, Ivan Dron!
+
+// ----------------------------------------------------------
+// ФУНКЦИИ (Function declaration)
+console.log(greeting_declaration("Bogdan", "Larionov")); // можно вызывать до обьявления функции
+
+function greeting_declaration(name, lastname) {
+  return `Hello, ${name} ${lastname}!`;
+}
+console.log(greeting_declaration("Bogdan", "Larionov")); // можно вызывать и после обьявления функции
+//ФУНКЦИОНАЛЬНЫЕ ВЫРАЖЕНИЯ
+// ----------------------------------------------------------
+let greeting = function getHello(name, lastname) {
+  return `Hello ${name} ${lastname}!`;
+};
+console.log(greeting("allona", "b"));
+// ----------------------------------------------------------
+//СТРЕЛОЧНЫЕ ФУНКЦИИ (Arrow functions)
+let greeting_arrow = (name, lastname) => {
+  return `Hello, ${name} ${lastname}!`;
+};
+// ----------------------------------------------------------
