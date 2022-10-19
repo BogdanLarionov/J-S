@@ -178,4 +178,8 @@ console.log(greeting("allona", "b"));
 let greeting_arrow = (name, lastname) => {
   return `Hello, ${name} ${lastname}!`;
 };
+
+let greeting_arrow = (lastname) => `Hello,  ${lastname}!`; // если аргумкнт 1 то модно писать без скобок
+console.log(greeting_arrow("larionov"));
+
 // ----------------------------------------------------------
