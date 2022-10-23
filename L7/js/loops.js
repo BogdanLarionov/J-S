@@ -46,6 +46,7 @@ function getNumsEven(n, m) {
 }
 
 getNumsEven(10, 4); // 4,6,8,10
+// getNumsEven(4, 20); // 4,6,8,10...20 'let i = n; i <= m; i++'
 
 // arrow function
 const getNumsEven = (n, m) => {
