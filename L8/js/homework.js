@@ -80,7 +80,7 @@ getSum(6, 10);
 // В программе задана переменная n.
 // Напишите программу, которая с помощью цикла считает сумму чисел от 1 до n и выводит в консоль.
 
-const getSum = (n) => {
+const get_Sum = (n) => {
   let sum = 0;
   for (let i = 1; i <= n; i++) {
     sum += i;
@@ -88,7 +88,7 @@ const getSum = (n) => {
   return sum;
 };
 
-console.log(getSum(5));  // 15
+console.log(get_Sum(5));  // 15
 
 
 
