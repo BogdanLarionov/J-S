@@ -105,7 +105,7 @@ function getMin(num1, num2) {
 
 console.log(getMin(1, 3)); // 1
 console.log(getMin(4, 3)); // 3
-// 1.1 function declaration - и метод Math.min()
+// 1.1 function declaration - и метод Math.min()  
 function getMin(num1, num2) {
   return Math.min(num1, num2);
 }
