@@ -53,3 +53,27 @@ console.log(arrayShift); // [ 'hello', 'Buy', 'My-my', 6, 42 ]
 
 arrayShift.shift();
 console.log(arrayShift); // [ 'Buy', 'My-my', 6, 42 ]
+// -----------------------
+const arr2 = [
+  "hello",
+  2,
+  4,
+  "",
+  true,
+  undefined,
+  "hello492!",
+  "hello492!",
+  "hello492!",
+];
+console.log(arr2[arr2.length - 1][arr2.length - 1]); // !
+
+// -----------------------
+
+const arr3 = ["Hello", "2", "4", true, undefined, "hello462!"];
+
+const result = arr3.slice(-1).join().slice(-1);
+console.log(result);
+// -----------------------
+const arr1 = ["Hello", "2", "4", true, undefined, "hello462!"];
+
+console.log(arr1.slice(-1).join().slice(-1));

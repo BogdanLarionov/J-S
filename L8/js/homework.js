@@ -88,8 +88,4 @@ const get_Sum = (n) => {
   return sum;
 };
 
-console.log(get_Sum(5));  // 15
-
-
-
-
+console.log(get_Sum(5)); // 15
