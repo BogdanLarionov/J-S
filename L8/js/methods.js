@@ -76,4 +76,4 @@ console.log(result);
 // -----------------------
 const arr1 = ["Hello", "2", "4", true, undefined, "hello462!"];
 
-console.log(arr1.slice(-1).join().slice(-1));
+console.log(arr1.slice(-1).join().slice(-1)); // !
