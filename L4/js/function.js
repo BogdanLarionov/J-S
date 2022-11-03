@@ -126,6 +126,7 @@ console.log(dividedNums(1, 4)); // 4
 console.log(dividedNums(4, 2)); // 2
 
 // ФУНКЦИИ (Function declaration)
+// вызываются в низу и в верху
 
 function greeting_declaration(name, lastname) {
   return `Hello, ${name} ${lastname}!`;
@@ -139,7 +140,8 @@ console.log(greeting_declaration("Bogdan", "Larionov"));
 // 5 + true = NaN
 // ---------
 
-//ФУНКЦИОНАЛЬНЫЕ ВЫРАЖЕНИЯ
+//ФУНКЦИОНАЛЬНЫЕ ВЫРАЖЕНИЯ - (function expression )
+// вызываются в низу
 
 let greeting = function getHello(name, lastname) {
   return `Hello ${name} ${lastname}!`;
