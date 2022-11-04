@@ -1,5 +1,8 @@
 // .reduce() - Служит для того, что мы получили какое-то финальное  значение,
 // совершив итерацию по массиву. Возврощает финалтное значение, число.
+
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects
 // ---------------------------------------------------------------------------
 // Найти сумму чисел в массиве
 // 1.
