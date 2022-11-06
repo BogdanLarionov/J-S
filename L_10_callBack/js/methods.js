@@ -29,7 +29,7 @@ for (let i = 0; i < age2.length; i++) {
 let age3 = [40, 45, 53, 23, 12, 7];
 
 age3.forEach((el) => {
-  if (el <= 18) {
+  if (el >= 18) {
     console.log(el); // 40, 45, 53, 23,
   }
 });
@@ -48,21 +48,21 @@ let age4 = [40, 45, 53, 23, 12, 7];
 // обычная функция
 for (let i = 0; i < age4.length; i++) {
   if (age4[i] >= 18) {
-    console.log(age4[i]);
+    console.log(age4[i]); // 40, 45, 53, 23,
   }
 }
 
 //  callback функция
+let age4 = [40, 45, 53, 23, 12, 7];
 age4.forEach((element) => {
   //  element - переменная
-  if (el >= 18) {
+  if (element <= 18) {
     console.log(element); // 12, 7
   }
 });
 
 // ------------------------------------------
 let age = [40, 45, 53, 23, 12, 7];
-
 age.forEach((element) => console.log(element * 2)); // 80, 90, 106, 46, 24, 14
 age.forEach((element) => console.log(element / 2)); // 20, 22.5, 26.5, 11.5, 6, 3.5
 
