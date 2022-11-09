@@ -73,3 +73,4 @@ console.log(new_arrOddEven); // [ '+', '+', '-', '+', '+', '+', '-', '+', '-', '
 let arr = [8, 7, -30, 76, 53, 93, -3, 10, -15, 0];
 let changed_arr = arr.map((el) => (el >= 0 ? "+" : "-"));
 console.log(changed_arr); // [ '+', '+', '-', '+', '+', '+', '-', '+', '-', '+' ]
+La;
