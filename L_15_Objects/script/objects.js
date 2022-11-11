@@ -68,7 +68,7 @@ console.log(anyString.substring(0, 3)); // Maz
 console.log(anyString.substring(4, 7)); // lla
 
 const users = [
-  // в масиве оьтеты
+  // в масиве ответы
   { first_name: "Ivan", last_name: "Ivanov", age: 20, salary: 500 },
   { first_name: "Olga", last_name: "Petrova", age: 12, salary: 250 },
   { first_name: "irina", last_name: "Alexandrova", age: 46, salary: 1500 },
