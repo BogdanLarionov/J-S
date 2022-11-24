@@ -1,11 +1,44 @@
 // 1.
 // const root = document.querySelector("#root");
 // console.log(root);
-
 // const div_elem = document.createElement("div");
 // div_elem.innerText = "Hello";
 // console.log(div_elem);
 // root.append(div_elem);
+// --------------
+
+// меняет цвет у боди
+// const body = document.querySelector("body");
+// body.style.backgroundColor = "green";
+
+// const div_text = document.createElement("div_text");
+
+// div_text.innerText = "Hello";
+// div_text.style.color = "yellow";
+
+// document.body.append(div_text);
+
+// --------------
+
+const div = document.querySelector("div");
+const img = document.querySelector("img");
+
+div.innerText = "hell!!!o";
+div.style.color = "blue";
+div.style.fontSize = "100px";
+div.style.margin = "100px";
+
+img.src =
+  "file:///Users/bogdanlarionov/Desktop/a2120549-6311-458c-b273-052916e0d411.jpeg";
+
+img.style.height = "600px";
+img.style.width = "450px";
+img.style.border = "2px solid black";
+img.style.marginLeft = "300px";
+
+console.log(div);
+document.body.append(div);
+div.append(img);
 
 // 2.
 // const root = document.querySelector("#root");
@@ -60,12 +93,12 @@
 
 // еще метод
 
-const div = document.createElement("div");
-const texts = ["Текст 1", "Текст 2", "Текст 3", "Текст 4"];
-const p_elem = texts.map((texts) => {
-  const p_elem = document.createElement("p");
-  p_elem.innerHTML = texts;
-  return p_elem;
-});
-div.append(...p_elem); // спред оператор
-root.append(div);
+// const div = document.createElement("div");
+// const texts = ["Текст 1", "Текст 2", "Текст 3", "Текст 4"];
+// const p_elem = texts.map((texts) => {
+//   const p_elem = document.createElement("p");
+//   p_elem.innerHTML = texts;
+//   return p_elem;
+// });
+// div.append(...p_elem); // спред оператор
+// root.append(div);

@@ -19,10 +19,14 @@
 // .getElementsByTagName('') - h2
 
 // Свойство:
+
+// .classList.remove("class_deleted"); // удалили class
+// .classList.add('class_add') - добовляет новый класс в теге
 // .innerText = '' - добывать текст
 // .innerHTML = '' - добывать текст
+// .innerHTML = '<p>helo</p>' - отображает только текст helo, а в теги виден <p>helo</p>
 // .textContent = '' - добывать текст
-// .appendchild = '' - добывать текст в первый
+// .appendChild = '' - добывать текст в первый
 
 // https://stackoverflow.com/questions/35213147/difference-between-textcontent-vs-innertext
 
