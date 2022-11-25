@@ -1,8 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .card{
-    border :1px solid black;
-    width :300px;
-    background-color :gray;
-    border-radius :1rem;
-    padding :10px;
-    margin :10px;
+    width: 250px;
+    border: 1px solid black;
+    background-color: beige;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* .card p {
+    margin: 10px 0px;
+} */
+
+.photo{
+    /* display: block; */
+    /* ведет себя как блочный элемент */
+    display: inline;
+    /*  ведет себя как строчный элемент  */
+    /* у img по умолчанию  display: inline; */
 }
