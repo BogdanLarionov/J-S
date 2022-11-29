@@ -50,7 +50,7 @@ const rootElem = document.querySelector("#root");
 
 workers.forEach(
   // метод forEach принимает в себя callback function
-  ({ id, first_name, last_name, age, rate, days, photo }) => {
+  ({ id, first_name, last_name, age, rate, days, photo, progress }) => {
     const card = document.createElement("div"); // card - container
 
     const idElem = document.createElement("p");
@@ -59,20 +59,41 @@ workers.forEach(
     const salaryElem = document.createElement("p");
     const photoElem = document.createElement("img");
     const progressElem = document.createElement("p");
+    const progressContainer = document.createElement("div");
+    const progressLine = document.createElement("div");
+    const progressValue = document.createElement("p");
 
     idElem.innerText = `ID: ${id}`;
     nameElem.innerText = `Name: ${first_name} ${last_name}`;
     ageElem.innerText = `Age: ${age}`;
     salaryElem.innerText = `salary: ${rate * days} $`;
+    progressValue.innerText = `${progress} %`;
+    // progressValue.innerText = progress + "%";
 
     card.classList.add("card");
+    progressContainer.classList.add("progress-container");
+    progressLine.classList.add("progress-line");
+    progressValue.classList.add("progress-value");
+
+    progressLine.style.width = progress + "%";
+    // progressLine.style.width = `${progress} %`;
 
     // photoElem.src = photo; // короткий способ
     // photoElem.alt = 'photo'; // короткий способ
     photoElem.setAttribute("src", photo); // длинный способ
     photoElem.setAttribute("alt", "photo"); // длинный способ
 
-    card.append(idElem, nameElem, ageElem, salaryElem, photoElem);
+    progressContainer.append(progressLine, progressValue);
+    card.append(
+      idElem,
+      nameElem,
+      ageElem,
+      salaryElem,
+      photoElem,
+      progressContainer
+    );
     rootElem.append(card);
   }
 );
+
+// http://htmlbook.ru/css/box-sizing
