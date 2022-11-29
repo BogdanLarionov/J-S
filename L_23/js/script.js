@@ -27,9 +27,9 @@ card.classList.add("card"); // добавили класс, можем в css о
 imgElem.classList.add("photo"); // добавили класс, элементу photo
 
 imgElem.setAttribute("src", "https://reqres.in/img/faces/12-image.jpg"); // добовление атрибута src k imgElem, метод отображения картинуи через js
-// -----------------------------------------
-imgElem.setAttribute("alt", "Изображение с девушкой"); // добовление атрибута k alt k imgElem описание фото
 
+imgElem.setAttribute("alt", "Изображение с девушкой"); // добовление атрибута k alt k imgElem описание фото
+// -----------------------------------------
 emailElem.setAttribute("href", "mailto:example@gmail.com"); // // добовление атрибута к href
 
 emailElem.setAttribute("href", "mailto:example@gmail.com"); // // добовление атрибута к href к emailElem
