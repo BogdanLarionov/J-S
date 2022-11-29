@@ -86,13 +86,22 @@ workers.forEach(
     // progress >= 50
     //   ? (progressLine.style.backgroundColor = "green")
     //   : (progressLine.style.backgroundColor = "red");
+
     // Условный Оператор
-    if (progress >= 50) {
-      progressLine.style.backgroundColor = "green";
-    } else if (progress >= 25) {
+    // if (progress >= 50) {
+    //   progressLine.style.backgroundColor = "green";
+    // } else if (progress >= 25) {
+    //   progressLine.style.backgroundColor = "yellow";
+    // } else {
+    //   progressLine.style.backgroundColor = "red";
+    // }
+
+    if (progress <= 20) {
+      progressLine.style.backgroundColor = "red";
+    } else if (progress <= 50) {
       progressLine.style.backgroundColor = "yellow";
     } else {
-      progressLine.style.backgroundColor = "red";
+      progressLine.style.backgroundColor = "green";
     }
 
     // photoElem.src = photo; // короткий способ
