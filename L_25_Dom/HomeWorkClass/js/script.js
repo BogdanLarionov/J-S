@@ -78,6 +78,23 @@ workers.forEach(
     progressLine.style.width = progress + "%";
     // progressLine.style.width = `${progress} %`;
 
+    // Тернарный Оператор
+    // progressLine.style.backgroundColor = progress >= 50 ? "red" : "green";
+    // progressLine.style.backgroundColor = progress < 50 ? "red" : "green";
+    // progressLine.style.backgroundColor =
+    // progress >= 50 ? "green" : progress >= 25 ? "yellow" : "red";
+    // progress >= 50
+    //   ? (progressLine.style.backgroundColor = "green")
+    //   : (progressLine.style.backgroundColor = "red");
+    // Условный Оператор
+    if (progress >= 50) {
+      progressLine.style.backgroundColor = "green";
+    } else if (progress >= 25) {
+      progressLine.style.backgroundColor = "yellow";
+    } else {
+      progressLine.style.backgroundColor = "red";
+    }
+
     // photoElem.src = photo; // короткий способ
     // photoElem.alt = 'photo'; // короткий способ
     photoElem.setAttribute("src", photo); // длинный способ
