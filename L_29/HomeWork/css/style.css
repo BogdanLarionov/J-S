@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form_workers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.form_workers input,
+.form_workers button {
+  margin: 10px;
+  width: 200px;
+  height: 30px;
+}
+
+.form_workers button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.card {
+  width: 300px;
+  height: 230px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: cornsilk;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.photo {
+  width: 128px;
+  height: 128px;
+}
