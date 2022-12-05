@@ -15,7 +15,7 @@ formWorkers.addEventListener("submit", (event) => {
   const cardElem = document.createElement("div");
   const nameElem = document.createElement("p");
   const lastnameElem = document.createElement("p");
-  const emailElem = document.createElement("p");
+  const emailElem = document.createElement("a");
   const photoElem = document.createElement("img");
   const progressElem = document.createElement("p");
 
