@@ -1,4 +1,6 @@
-//Задан массив объектов workers. Выведите на экран карточки со следующей информацией по всем работникам: ID, Имя, Фамилия, Возраст, Зарплата, фото. Зарплата рассчитывается через умножение ставки на количество дней. Карточки должны включать отображение фотографии. Примените стили к карточкам: width, padding, border, background-color.
+//Задан массив объектов workers. Выведите на экран карточки со следующей информацией по всем работникам:
+//  ID, Имя, Фамилия, Возраст, Зарплата, фото. Зарплата рассчитывается через умножение ставки на количество дней.
+//  Карточки должны включать отображение фотографии. Примените стили к карточкам: width, padding, border, background-color.
 
 const workers = [
   {
@@ -58,7 +60,7 @@ workers.forEach(
     const ageElem = document.createElement("p");
     const salaryElem = document.createElement("p");
     const photoElem = document.createElement("img");
-    const progressElem = document.createElement("p");
+    // const progressElem = document.createElement("p");
     const progressContainer = document.createElement("div");
     const progressLine = document.createElement("div");
     const progressValue = document.createElement("p");
@@ -80,7 +82,9 @@ workers.forEach(
 
     // Тернарный Оператор
     // progressLine.style.backgroundColor = progress >= 50 ? "red" : "green";
+
     // progressLine.style.backgroundColor = progress < 50 ? "red" : "green";
+
     // progressLine.style.backgroundColor =
     // progress >= 50 ? "green" : progress >= 25 ? "yellow" : "red";
     // progress >= 50

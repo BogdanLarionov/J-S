@@ -9,6 +9,8 @@
   flex-direction: column;
   justify-content: center;
   margin: 10px;
+  border: 1px solid black;
+  width: 14rem;
 }
 
 .form_workers input,
@@ -24,7 +26,12 @@
   border: none;
 }
 
-.card {
+.inp_name,
+input {
+  padding: 5px;
+}
+
+.card_elem {
   width: 300px;
   height: 230px;
   border: 1px solid black;
@@ -34,7 +41,24 @@
   padding: 10px;
 }
 
-.photo {
+.link_img {
   width: 128px;
   height: 128px;
+}
+
+.progres_div {
+  position: relative;
+  border: 1px solid black;
+  height: 20px;
+}
+
+.progress_line {
+  position: absolute;
+  height: 100%;
+}
+
+.progress_value {
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
