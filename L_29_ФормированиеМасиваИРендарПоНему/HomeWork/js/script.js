@@ -51,9 +51,12 @@ workers.addEventListener("submit", (event) => {
   } else if (progress.value >= 50) {
     progressLine.style.backgroundColor = "brown";
     progressLine.style.width = "50%";
-  } else {
+  } else if (progress.value >= 25) {
     progressLine.style.backgroundColor = "red";
     progressLine.style.width = "25%";
+  } else {
+    progressLine.style.width = "4%";
+    progressLine.style.backgroundColor = "#cd84f1";
   }
 
   workers.append(cardElem);
