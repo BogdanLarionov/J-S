@@ -166,7 +166,7 @@ const photos = [
   "https://image.geo.de/30039574/t/b1/v3/w1440/r1/-/afrikanischer-elefant-gross-jpg--15463-.jpg",
   "https://image.stern.de/32837894/t/tc/v2/w1440/r1/-/elefant-baby.jpg",
   "https://www.fr.de/bilder/2022/03/14/91409793/28439211-eigentlich-sind-afrikas-elefanten-durch-das-washingtoner-artenschutzabkommen-geschuetzt-imago-images-2jw2YakuLDec.jpg",
-  "file:///Users/bogdanlarionov/Desktop/A.gif",
+  // "file:///Users/bogdanlarionov/Desktop/A.gif",
 ];
 
 const imgSlider = document.querySelector(".img_slider");
@@ -177,3 +177,37 @@ imgSlider.addEventListener(
   "click",
   (event) => (event.target.src = photos[photoIndex++ % photos.length])
 );
+
+// homework
+// слайдер
+const photosBtn = [
+  "https://image.geo.de/30039574/t/b1/v3/w1440/r1/-/afrikanischer-elefant-gross-jpg--15463-.jpg",
+  "https://image.stern.de/32837894/t/tc/v2/w1440/r1/-/elefant-baby.jpg",
+  "https://www.fr.de/bilder/2022/03/14/91409793/28439211-eigentlich-sind-afrikas-elefanten-durch-das-washingtoner-artenschutzabkommen-geschuetzt-imago-images-2jw2YakuLDec.jpg",
+  // "file:///Users/bogdanlarionov/Desktop/A.gif",
+];
+
+const imgBtnSlider = document.querySelector(".img_btn_slider");
+const leftBtn = document.querySelector(".left_btn");
+const rightBtn = document.querySelector(".right_btn");
+
+let photo_index = 0;
+
+leftBtn.addEventListener("click", () => {
+  imgBtnSlider.src = photosBtn[photo_index++ % photosBtn.length];
+});
+
+rightBtn.addEventListener("click", () => {
+  imgBtnSlider.src = photosBtn[++photo_index % photosBtn.length];
+});
+
+// кнопка
+
+const btnBig = document.querySelector(".btn_big");
+
+btnBig.addEventListener("click", () => {
+  btnBig.style.height = "60px";
+  btnBig.style.width = "60px";
+  btnBig.style.backgroundColor = "green";
+  btnBig.style.marginLeft = "50rem";
+});
