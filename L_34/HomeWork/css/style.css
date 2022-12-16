@@ -1,0 +1,22 @@
+.black_mode {
+  background-color: black;
+}
+
+.img_slider {
+  width: 300x;
+  height: 300px;
+  object-fit: cover;
+}
+
+.img_slider_1 {
+  width: 300x;
+  height: 300px;
+  object-fit: cover;
+}
+
+.triggers button {
+  background-color: green;
+  font-size: large;
+  border-radius: 10px;
+  width: 40px;
+}
