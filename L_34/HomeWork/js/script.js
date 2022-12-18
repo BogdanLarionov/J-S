@@ -6,7 +6,7 @@ const photos = [
   "https://image.geo.de/30039574/t/b1/v3/w1440/r1/-/afrikanischer-elefant-gross-jpg--15463-.jpg",
   "https://image.stern.de/32837894/t/tc/v2/w1440/r1/-/elefant-baby.jpg",
   "https://www.fr.de/bilder/2022/03/14/91409793/28439211-eigentlich-sind-afrikas-elefanten-durch-das-washingtoner-artenschutzabkommen-geschuetzt-imago-images-2jw2YakuLDec.jpg",
-  "file:///Users/bogdanlarionov/Desktop/A.gif",
+  // "file:///Users/bogdanlarionov/Desktop/A.gif",
 ];
 
 const img_slider_1 = document.querySelector(".img_slider_1");
@@ -83,4 +83,44 @@ incrBtn.addEventListener("click", () => {
   btn_params += 10;
   incrBtn.style.backgroundColor = `rgb(${getRandomNum()}, ${getRandomNum()}, ${getRandomNum()})`;
   incr_btn_rendem(btn_params);
+});
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Создать генератор бросаемых костей
+
+const gameBtn = document.querySelector(".game_btn");
+const gameResalt = document.querySelector(".game_resalt");
+
+const getNum = () => Math.round(Math.random() * 5 + 1); // 1 - 6
+
+gameBtn.addEventListener(
+  "click",
+  () => (gameResalt.innerText = `${getNum()} X ${getNum()}`)
+);
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Создать описанный в форме элемент
+
+const addForm = document.querySelector(".add_form");
+const formResalt = document.querySelector(".form_resalt");
+
+addForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const { type, content, color } = event.target;
+
+  formResalt.innerText = "";
+
+  const elem = document.createElement(type.value);
+  elem.innerText = content.value;
+
+  elem.style.color = color.value;
+
+  formResalt.append(elem);
+
+  type.value = "";
+  content.value = "";
+  color.value = "";
 });
