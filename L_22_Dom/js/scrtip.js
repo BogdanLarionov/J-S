@@ -8,8 +8,8 @@
 // --------------
 
 // меняет цвет у боди
-// const body = document.querySelector("body");
-// body.style.backgroundColor = "green";
+const body = document.querySelector("body");
+body.style.backgroundColor = "green";
 
 // const div_text = document.createElement("div_text");
 
