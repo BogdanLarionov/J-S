@@ -99,6 +99,7 @@ const user = {
 
 function addUser(user) {
   const container = document.createElement("div");
+  container.classList.add("cont");
 
   const img = document.createElement("img");
   img.src = user.data.avatar; // вытягиваем фото
