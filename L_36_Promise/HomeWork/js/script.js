@@ -1,9 +1,9 @@
 // HomeWork
 // https://jsonplaceholder.typicode.com/todos
 
-const cardContiner_3 = document.querySelector(".cards_container_3");
+const cardContiner_3 = document.querySelector(".cards_container");
 
-fetch("https://jsonplaceholder.typicode.com/todos")
+fetch("https://jsonplaceholder.typicode.com/todos") // извлечь
   .then((resp) => resp.json())
   .then((json_data) => render_3(json_data)); // json в том случае это переменная
 
