@@ -84,3 +84,6 @@ const [first_btn, second_btn] = document.querySelectorAll(".triggers button");
 
 first_btn.addEventListener("click", () => request(1));
 second_btn.addEventListener("click", () => request(2));
+
+/* const triggers = document.querySelectorAll(".triggers button");
+triggers.forEach((e, i) => e.addEventListener("click", () => request(i + 1))); */
