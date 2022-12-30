@@ -1,0 +1,19 @@
+.card {
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+
+.cards_container {
+  display: flex;
+  /* по умолчанию row */
+  justify-content: center;
+  align-items: center;
+}
