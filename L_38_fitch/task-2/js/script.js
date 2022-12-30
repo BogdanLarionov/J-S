@@ -43,7 +43,7 @@ console.log(...array); // 1, true, 'hello', 56 выводит элемменты
 
 const cardsContainer = document.querySelector(".cards_container");
 const render = (json_data) => {
-  cardsContainer.innerText = "";
+  cardsContainer.innerText = ""; // очистка контейнера
   const cards = json_data.map(
     ({ id, avatar, first_name, last_name, email }) => {
       const card = document.createElement("div");
