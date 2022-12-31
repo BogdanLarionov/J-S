@@ -53,13 +53,15 @@ const render = (json_data) => {
       const last_nameElem = document.createElement("p");
       const emailElem = document.createElement("a");
 
+      card.classList.add("card");
+
       idElem.innerText = `id: ${id}`;
 
       avatarElem.src = avatar;
       avatarElem.alt = avatar;
 
-      nameElem.innerText = first_name;
-      last_nameElem.innerText = last_name;
+      nameElem.innerText = `name: ${first_name}`;
+      last_nameElem.innerText = `lastname: ${last_name}`;
 
       emailElem.innerText = `${email}`;
       emailElem.href = `mailto:${email}`;
@@ -85,5 +87,6 @@ const [first_btn, second_btn] = document.querySelectorAll(".triggers button");
 first_btn.addEventListener("click", () => request(1));
 second_btn.addEventListener("click", () => request(2));
 
+// короткая запись для кнопак
 /* const triggers = document.querySelectorAll(".triggers button");
 triggers.forEach((e, i) => e.addEventListener("click", () => request(i + 1))); */

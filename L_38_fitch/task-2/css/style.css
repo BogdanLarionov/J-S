@@ -1,0 +1,33 @@
+.card {
+  margin: 10px;
+  border: 1px solid black;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.triggers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triggers button {
+  background-color: coral;
+  height: 3rem;
+  width: 3rem;
+  margin: 10px;
+  border-radius: 20px;
+  font-size: large;
+}
