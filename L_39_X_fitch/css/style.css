@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+}
+
+.item {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+#add_form {
+  display: grid;
+  gap: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+#add_form input,
+button {
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* #add_form  button {
+    padding: 10px;
+    border: 2px solid black;
+  } */
