@@ -1,5 +1,5 @@
 // https://dummyjson.com/
-// https://codebeautify.org/jsonviewer
+// https://codebeautify.org/jsonviewer - причисать json
 
 // https://prog-center.pro/ сайт Нелли
 
@@ -20,19 +20,75 @@ const request = (num) => {
 };
 
 // const render = (json) => {
-const render = ({ firstName, lastName, age, gender }) => {
+const render = ({
+  id,
+  firstName,
+  lastName,
+  maidenName,
+  age,
+  gender,
+  email,
+  phone,
+  username,
+  password,
+  birthDate,
+  image,
+}) => {
   usersContainer.innerText = ""; // чистить контейнер
   const userCard = document.createElement("div");
+  const idElem = document.createElement("p");
   const nameElem = document.createElement("p");
+  const maidenNameElem = document.createElement("p");
   const ageElem = document.createElement("p");
   const genderElem = document.createElement("p");
+  const emailElem = document.createElement("a");
+  const phoneElem = document.createElement("a");
+  const usernameElem = document.createElement("p");
+  const passwordElem = document.createElement("p");
+  const birthDateElem = document.createElement("p");
+  const imageElem = document.createElement("img");
 
-  userCard.append(nameElem, ageElem, genderElem);
+  userCard.append(
+    idElem,
+    nameElem,
+    maidenNameElem,
+    ageElem,
+    genderElem,
+    emailElem,
+    phoneElem,
+    usernameElem,
+    passwordElem,
+    birthDateElem,
+    imageElem
+  );
   usersContainer.append(userCard);
 
+  idElem.innerText = `id: ${id}`;
+
   nameElem.innerText = `Name: ${firstName} ${lastName}`;
+  maidenNameElem.innerText = `Maiden Name: ${maidenName}`;
   ageElem.innerText = `Age: ${age}`;
   genderElem.innerText = `Gender: ${gender}`;
+
+  emailElem.innerText = `${email}`;
+  emailElem.href = `mailto:${email}`;
+  emailElem.style.margin = "10px";
+
+  phoneElem.innerText = `${phone}`;
+  phoneElem.href = `${phone}`;
+
+  usernameElem.innerText = `${username}`;
+  usernameElem.classList.add("usernameElem");
+
+  passwordElem.innerText = `Password: ${password}`;
+
+  birthDateElem.innerText = `Birthdate: ${birthDate}`;
+
+  imageElem.src = image;
+  imageElem.alt = image;
+  imageElem.style.height = "150px";
+  imageElem.style.width = "150px";
+  imageElem.classList.add("img");
 
   const Cardbackground = gender === "male" ? "lightgreen" : "lightpink";
   userCard.style.backgroundColor = Cardbackground;
