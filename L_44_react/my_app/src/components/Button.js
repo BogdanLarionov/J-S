@@ -17,6 +17,7 @@ export default function Button() {
 }
 
 // homework
+// https://github.com/NelliEfr/HW_React_basics/blob/main/task.txt
 // 1. Создать react-приложение через npx create-react-app app_name
 // 2. Удалить ненужные файлы => подготовить приложение к работе
 // 3. Запустить приложение через npm start (предварительно перейти в папку проекта app_name)
