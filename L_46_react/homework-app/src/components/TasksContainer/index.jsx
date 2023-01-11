@@ -1,10 +1,13 @@
 import React from "react";
 import Task from "../Task";
 
-export default function TasksContainer() {
+export default function TasksContainer({ tasks }) {
   return (
     <div>
-      <Task />
+      Tasks:
+      {tasks.map((elem) => (
+        <Task key={elem.id} {...elem} />
+      ))}
     </div>
   );
 }

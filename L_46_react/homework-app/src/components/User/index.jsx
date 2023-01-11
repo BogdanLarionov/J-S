@@ -4,7 +4,14 @@ import s from "../User/index.module.css";
 // import  "./User/index.module.css";
 import TasksContainer from "../TasksContainer";
 
-export default function User({ id, firstname, lastname, adderess, salary }) {
+export default function User({
+  id,
+  firstname,
+  lastname,
+  adderess,
+  salary,
+  tasks,
+}) {
   // const user_style = {
   //   border: "1px solid black",
   //   borderRadius: "10px",
@@ -23,7 +30,7 @@ export default function User({ id, firstname, lastname, adderess, salary }) {
 
       <p className={s.address}>Address: {adderess}</p>
       <p>Salary: {salary}</p>
-      <TasksContainer />
+      <TasksContainer tasks={tasks} />
     </div>
   );
 }
