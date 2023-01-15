@@ -1,0 +1,13 @@
+.word_card {
+  border: 3px solid #2980b9;
+  font-size: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: rgb(41, 128, 185); */
+  cursor: pointer;
+  /* color: wheat; */
+  /* border: none; */
+}
