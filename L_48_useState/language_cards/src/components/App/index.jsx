@@ -3,6 +3,7 @@ import { words } from "../../data/words";
 import { useState } from "react";
 import Trigers from "../Trigers";
 import AddPostForm from "../AddPostForm";
+import s from "./index.module.css";
 
 function App() {
   const [cards, setCards] = useState(words);
@@ -42,10 +43,23 @@ function App() {
   // };
 
   // https://metanit.com/web/javascript/5.6.php
-  return (
-    <div>
-      <AddPostForm />
 
+  const add_card = (rus_value, eng_value) =>
+    setCards([
+      ...cards,
+      {
+        id: Date.now(),
+        // id: cards.length + 1,
+        eng: eng_value,
+        rus: rus_value,
+        // lang: "eng",
+        lang: "rus",
+      },
+    ]);
+
+  return (
+    <div className={s.app_container}>
+      <AddPostForm add_card={add_card} />
       <CardsContainer words_array={cards} change_lang={change_lang} />
       <Trigers change_to_eng={change_to_eng} change_to_rus={change_to_rus} />
     </div>
