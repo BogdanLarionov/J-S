@@ -1,3 +1,19 @@
 .nav_block {
-  color: red;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.nav_menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 68px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.nav_menu li {
+  cursor: pointer;
 }

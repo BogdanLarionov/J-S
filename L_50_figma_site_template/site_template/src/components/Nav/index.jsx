@@ -10,22 +10,24 @@ export default function Nav() {
           className='wrapper' 
           className='wrapper s.nav_block'
           className=`{wrapper ${s.nav_block} }` */}
-      <a href="#">
+      <a href="www">
+        {/* # - заглушка для ссылки */}
         <img src={logo} alt="logo" />
       </a>
-      <ul></ul>
-      <li>Главная</li>
-      <li>услуги</li>
-      <li>кейсы</li>
-      <li>O компании</li>
-      <li>контакты</li>
+      <ul className={s.nav_menu}>
+        <li>main</li>
+        <li>services</li>
+        <li>cases</li>
+        <li>About company</li>
+        <li>contacts</li>
+      </ul>
     </nav>
   );
 }
 
-let a = ["hello", "dood day", "good afternoon", "good nigth"];
-console.log(a); // ["hello", "dood day", "good afternoon", "good nigth"];
-// метод join преодбазует из масива в сткоку
-console.log(a.join()); // 'hello, dood day, good afternoon, good nigth'
-console.log(a.join("")); // 'hello dood day good afternoon good nigth'
-console.log(a.join(" ")); // 'hello dood day good afternoon good nigth'
+// let a = ["hello", "dood day", "good afternoon", "good nigth"];
+// console.log(a); // ["hello", "dood day", "good afternoon", "good nigth"];
+// // метод join преодбазует из масива в сткоку
+// console.log(a.join()); // 'hello, dood day, good afternoon, good nigth'
+// console.log(a.join("")); // 'hello dood day good afternoon good nigth'
+// console.log(a.join(" ")); // 'hello dood day good afternoon good nigth'
