@@ -7,10 +7,10 @@ export default function Nav() {
   return (
     <nav className={["wrapper", s.nav_block].join(" ")}>
       {/*  className={s.nav_block}
-          className='wrapper' 
+          className='wrapper'
           className='wrapper s.nav_block'
           className=`{wrapper ${s.nav_block} }` */}
-      <a href="www">
+      <a href="/#">
         {/* # - заглушка для ссылки */}
         <img src={logo} alt="logo" />
       </a>
@@ -31,3 +31,4 @@ export default function Nav() {
 // console.log(a.join()); // 'hello, dood day, good afternoon, good nigth'
 // console.log(a.join("")); // 'hello dood day good afternoon good nigth'
 // console.log(a.join(" ")); // 'hello dood day good afternoon good nigth'
+// console.log(a.join(",")); // 'hello,dood day,good afternoon,good nigth'
