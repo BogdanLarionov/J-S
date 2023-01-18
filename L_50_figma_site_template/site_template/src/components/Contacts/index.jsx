@@ -1,6 +1,7 @@
 import React from "react";
 import ContactsForm from "../ContactsForm";
 import s from "./index.module.css";
+import { MobileOutlined, MailOutlined } from "@ant-design/icons";
 
 export default function Contacts() {
   return (
@@ -13,8 +14,13 @@ export default function Contacts() {
             possible!
           </p>
           <div className={s.phone_and_mail}>
-            <p>+1 716-266-6008</p>
-            <p>order@bu-one.com</p>
+            <p>
+              <MobileOutlined />
+              +1 716-266-6008
+            </p>
+            <p>
+              <MailOutlined /> order@bu-one.com
+            </p>
           </div>
         </div>
         <ContactsForm />

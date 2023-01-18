@@ -22,4 +22,6 @@
 .phone_and_mail {
   margin-top: 80px;
   display: flex;
+  /* justify-content: space-between; */
+  gap: 40px;
 }
