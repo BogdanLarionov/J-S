@@ -1,0 +1,6 @@
+.footer_block {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px;
+  /* font-size: 20px; */
+}
