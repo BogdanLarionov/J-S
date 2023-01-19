@@ -7,7 +7,7 @@ export default function AboutUs() {
   return (
     <section className={["wrapper", s.about_us_section].join(" ")}>
       <div>
-        <p className="subheader">abaut us</p>
+        <p className="subheader">about us</p>
         <h2>
           Company <span className={s.accent}>IvanovProm</span>
         </h2>

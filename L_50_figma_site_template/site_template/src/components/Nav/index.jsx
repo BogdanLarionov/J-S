@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./media/buh_one_logo.png";
 // импортировали картинку
 import s from "./index.module.css";
+import { MenuOutlined } from "@ant-design/icons";
 
 export default function Nav() {
   return (
@@ -10,10 +11,12 @@ export default function Nav() {
           className='wrapper'
           className='wrapper s.nav_block'
           className=`{wrapper ${s.nav_block} }` */}
+
       <a href="/#">
         {/* # - заглушка для ссылки */}
         <img src={logo} alt="logo" />
       </a>
+
       <ul className={s.nav_menu}>
         <li>main</li>
         <li>services</li>
@@ -21,6 +24,8 @@ export default function Nav() {
         <li>About company</li>
         <li>contacts</li>
       </ul>
+
+      <MenuOutlined className={s.menu_icon} />
     </nav>
   );
 }

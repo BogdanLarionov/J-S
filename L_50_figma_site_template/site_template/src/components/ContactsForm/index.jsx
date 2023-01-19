@@ -7,12 +7,22 @@ export default function ContactsForm() {
       <div className={s.firstname_and_lastname}>
         <label>
           <p>Name</p>
-          <input type="text" name="firstname" placeholder="John" />
+          <input
+            type="text"
+            name="firstname"
+            placeholder="John"
+            autoComplete="off"
+          />
         </label>
 
         <label>
           <p>Surname</p>
-          <input type="text" name="lastname" placeholder="Brown" />
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Brown"
+            autoComplete="off"
+          />
         </label>
       </div>
 
