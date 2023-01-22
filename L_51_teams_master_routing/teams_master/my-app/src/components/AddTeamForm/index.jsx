@@ -23,3 +23,5 @@ export default function AddTeamForm() {
 }
 
 // Научить форму при отправке собирать данные, введенные в инпут, и выводить их в консоль
+
+// https://react-select.com/home
