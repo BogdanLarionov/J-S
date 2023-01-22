@@ -4,7 +4,7 @@ import logo from "./media/buh_one_logo.png";
 import s from "./index.module.css";
 import { MenuOutlined } from "@ant-design/icons";
 
-export default function Nav() {
+export default function Nav({ menuActive, setMenuActive }) {
   return (
     <nav className={["wrapper", s.nav_block].join(" ")}>
       {/*  className={s.nav_block}
@@ -17,7 +17,7 @@ export default function Nav() {
         <img src={logo} alt="logo" />
       </a>
 
-      <ul className={s.nav_menu}>
+      <ul className={[s.nav_menu, menuActive ? s.active : ""].join(" ")}>
         <li>main</li>
         <li>services</li>
         <li>cases</li>
@@ -25,7 +25,10 @@ export default function Nav() {
         <li>contacts</li>
       </ul>
 
-      <MenuOutlined className={s.menu_icon} />
+      <MenuOutlined
+        className={s.menu_icon}
+        onClick={() => setMenuActive(menuActive ? false : true)}
+      />
     </nav>
   );
 }
